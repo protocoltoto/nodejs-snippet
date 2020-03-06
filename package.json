@@ -1,0 +1,23 @@
+{
+  "name": "nodejs-snippet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/protocoltoto/nodejs-snippet.git"
+  },
+  "author": "rujji",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/protocoltoto/nodejs-snippet/issues"
+  },
+  "homepage": "https://github.com/protocoltoto/nodejs-snippet#readme",
+  "dependencies": {
+    "aws-sdk": "^2.634.0",
+    "jest": "^25.1.0"
+  }
+}
