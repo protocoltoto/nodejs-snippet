@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/protocoltoto/nodejs-snippet#readme",
   "dependencies": {
-    "aws-sdk": "^2.634.0",
+    "aws-sdk": "^2.814.0",
     "jest": "^25.1.0"
   }
 }
