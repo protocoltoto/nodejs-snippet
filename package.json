@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/protocoltoto/nodejs-snippet#readme",
   "dependencies": {
+    "@aws-sdk/client-s3": "^3.338.0",
     "aws-sdk": "^2.634.0",
     "jest": "^25.1.0",
     "openpgp": "^5.7.0"

@@ -34,6 +34,22 @@ const _downloadS3 = (s3bucket, absolutepath) => {
     });
   });
 };
+const _deleteS3 = (s3bucket, absolutepath) => {
+  const params = {
+    Bucket: s3bucket,
+    Key: absolutepath, // File name you want to save as in S3
+  };
+
+  return new Promise((resolve, reject) => {
+    let s3 = new AWS.S3({ region: REGION_NAME });
+    s3.deleteObject(params, function (err, data) {
+      if (err) {
+        reject(err);
+      }
+      resolve(data);
+    });
+  });
+};
 
 const _listObjectS3 = (s3bucket) => {
   const params = {
@@ -51,4 +67,4 @@ const _listObjectS3 = (s3bucket) => {
   });
 };
 
-module.exports = { _uploadToS3, _listObjectS3, _downloadS3 };
+module.exports = { _uploadToS3, _listObjectS3, _downloadS3, _deleteS3 };
